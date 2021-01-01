@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Import styles.css -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>FoodSy Restaurant</title>
+  </head>
+  <body class="grey lighten-5">
+
+    <header class="header">
+      <!-- Navbar -->
+      <nav class="navbar teal darken-1 z-depth-0">
+        <div class="nav-wrapper">
+          <div class="container">
+            <a href="#" class="brand-logo center">FoodSy</a>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+    </header>
+
+    <main class="main">
+      <!-- Login -->
+      <section class="login" id="login">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1 class="title">Halo, ingin memesan makanan?</h1>
+              <p>Silahkan login terlebih dahulu untuk melihat daftar menu</p>
+              <button class="btn green darken-1" id="liffLoginButton">Log in</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu -->
+      <section class="menu" id="menu">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1 class="title">Selamat Datang di FoodSy Restaurant</h1>
+              <p class="text">Hi <span id="username">There</span>! Kamu bisa memilih menu dibawah untuk memesan.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <h2 class="title-section">Makanan</h2>
+              <div class="menu-list menu-foods"></div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="row">
+            <div class="col s12">
+              <h2 class="title-section">Minuman</h2>
+              <div class="menu-list menu-drinks"></div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="row">
+            <div class="col s12">
+              <h2 class="title-section">Ringkasan</h2>
+              <div class="summary">
+                <div class="summary-details"></div>
+                <div class="summary-button">
+                  <button class="btn teal darken-1 btn-order">Pesan Sekarang</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 center-align" style="margin-top: 60px">
+              <button class="btn grey lighten-3 black-text z-depth-0" id="openWindowButton">Buka di External Browser</button>
+              <button class="btn grey lighten-3 black-text z-depth-0" id="liffLogoutButton">Log Out</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Menu -->
+    </main>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/liff-starter.js"></script>
+  </body>
+</html>
